@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    
+  <nav>
+    <header>
+        <h1>🆃🅷🅴 🅷🅸🅽🅳🆄 🅽🅴🆆🆂</h1>
+    </header>
+     <div class="main-nav container flex">
+           <a onclick="reload()" class="company-logo" href = "#">
+               <img src ="./assets/logo.png"  alt = "company logo">
+           </a>
+         <div class="nav-links">
+                <ul class=" flex">
+                    <li  class ="hover-links nav-item" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                    <li  class ="hover-links nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li  class ="hover-links nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                    <li  class ="hover-links nav-item" id="technology" onclick="onNavItemClick('technology')">Technology</li>
+                </ul>
+         </div>
+         <div class="search-bar">
+               <input  id="search-text" type="text" class="input-button" placeholder=".eg science">
+               <button  id="search-button"   class="search-button">Search</button>
+           </div>
+
+     </div>
+
+    </nav>
+
+ <main>
+    <div class="cards-container container  flex  " id="cards-container">
+        
+    </div>
+ </main>
+
+ <template id="template-news-card">
+    <div class="card">
+        <div class="card-header">
+           <img  src="https://via.placeholder.com/400*200 " alt ="news-image" id="news-img">
+        </div>
+        
+        <div class="card-content">
+         <h3 id="news-title">this is Title</h2>
+            <hr noshade="">
+         <h6 class="news-source" id="news-source">jknsanskdjasdnaskjda</h6>
+         <p class="news-desc" id="news-decs">saanxas,dm s,acmzxcxzcmxccmzxcmzcm,zcmxczxmczx,mczx,mcxzm,czx,mczxd sdj</p>
+        </div>
+     </div>
+ </template> 
+
+
+ <footer  >
+    <div >
+         <a class="footer-link" href="https://www.linkedin.com/" color="11999E">LinkedIn</a>
+        <a class="footer-link" href="https://twitter.com/">Twitter</a>
+         <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
+    </div>
+    <p class="copyright"><strong>© 2024 Ashwani Maurya  @The Hindu News.</strong></p>
+
+ </footer>
+
+   <script src="index.js"></script> 
+</body>
+</html>
